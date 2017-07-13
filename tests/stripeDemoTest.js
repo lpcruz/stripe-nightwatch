@@ -1,5 +1,5 @@
 /**
- * Sample automated test scenario for Nightwatch.js
+ * Sample automated test scenario for Stripe Elements nightwatch.js
  *
  */
 
