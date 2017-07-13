@@ -14,6 +14,17 @@ module.exports = {
   'test full name input load' : function(client) {
     client
       .waitForElementPresent('input[name="cardholder-name"]', 1000)
+  },
+
+  'test phone number input load' : function(client) {
+    client
+      .waitForElementPresent('input[type="tel"]', 1000)
+  },
+
+  'test card number input load' : function(client) {
+    client
+      .waitForElementPresent('#card-element', 1000)
+
       .end();
   }
 };
