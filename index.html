@@ -1,0 +1,53 @@
+<!--DOCTYPE HTML-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Commits</title>
+
+    <!-- Meta Descriptions -->
+    <meta name="description" content="A beautiful way to show commits">
+    <meta name="author" content="lcruz">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  
+  <body>
+
+<form>
+  <label>
+    <input name="cardholder-name" class="field is-empty" placeholder="Jane Doe" />
+    <span><span>Name</span></span>
+  </label>
+  <label>
+    <input class="field is-empty" type="tel" placeholder="(123) 456-7890" />
+    <span><span>Phone</span></span>
+  </label>
+  <label>
+    <div id="card-element" class="field is-empty"></div>
+    <span><span>Card</span></span>
+  </label>
+  <button type="submit">Pay $25</button>
+  <div class="outcome">
+    <div class="error" role="alert"></div>
+    <div class="success">
+      Success! Your Stripe token is <span class="token"></span>
+    </div>
+  </div>
+</form>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src='js/stripe.js'></script>
+  
+  </body>
+
+</html>
